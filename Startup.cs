@@ -51,8 +51,10 @@ namespace GraphQLExample
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapGraphQL();
             });
+
+            app.UseGraphQL("/api");
         }
     }
 }
